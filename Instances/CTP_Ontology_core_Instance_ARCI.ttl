@@ -296,7 +296,7 @@ ctp:Type rdf:type owl:Class .
 #################################################################
 
 ###  http://vocab.getty.edu/page/aat/300054138
-<http://vocab.getty.edu/page/aat/300054138> a ctp:Subject ;
+<https://vocab.getty.edu/aat/300054138> a ctp:Subject ;
                                          rdfs:label "art(discipline)"@en ,
                                          rdfs:label "arte(disciplina)"@it;
                                          ctp:hasDescription "Discipline that concerns expertise or the study of objects, environments, or experiences (as in performance art) that are visual in nature, were created by the use of skill and imagination, and possess an aesthetic that is valued and of a quality and type that would be collected by art museums. It may refer to the study of the fine arts or the fine and decorative arts together. The meaning is broader than works of art or art objects, including architecture as well."@en ;
@@ -332,6 +332,7 @@ ctp:Type rdf:type owl:Class .
 ###  https://w3id.org/ctp/arci/Arcimboldo_tp
 :Anatomy_tp a ctp:ThematicPath ;
               ctp:hasCreationDate "2025-04-05"^^xsd:date ;
+            #@Tiziana: non ho capito perché ci sono due creatori
               ctp:hasRelationToAgent :Creator_1 ,
                                      :Creator_2 ;
               ctp:hasSlot :Index01 ,
@@ -348,6 +349,7 @@ ctp:Type rdf:type owl:Class .
               ctp:hasTheme :Arcimboldo_theme ;
               ctp:hasTitle "Arcimboldo"@en , 
                            "Arcimboldo"@it ;
+                
               ctp:landingPage <https://www.europeana.eu/it/stories/arcimboldo-the-artist-who-made-portraits-with-nature> .
 
 
@@ -380,15 +382,18 @@ ctp:Type rdf:type owl:Class .
 
 
 ###  https://www.europeana.eu/it/item/15502/GG_4510
-<https://www.europeana.eu/it/item/15502/GG_4510> a ctp:CulturalResource ;
+### @tiziana: Al posto della pagine web https://www.europeana.eu/it/item/15502/GG_4510 dovremmo usare la uri dell'item  e comunque prenderei sempre gli identificatori senza indicazione della lingua /it/
+<http://data.europeana.eu/item/15502/GG_4510> a ctp:CulturalResource ;
                                                    ctp:hasPrimaryIdentifier "item/15502/GG_4510"^^rdfs:Literal ;
                                                    ctp:hasRelationToAgent :Author_1 ,
                                                                           :Holder_1 ;
                                               ctp:hasTitle "Erzherzogin Magdalena (1532-1590), Brustbild"@de ;
                                               ctp:hasType <http://vocab.getty.edu/page/aat/300054216> ;
                                               ctp:isPartOf :Arcimboldo_tp ;
-                                              ctp:landingPage <https://www.europeana.eu/it/item/15502/GG_4510> ;
-                                              ctp:linkToDigitalization <https://www.europeana.eu/it/item/15502/GG_4510> .
+### @tiziana: No lingua, visto che La uri dereferenzia anche per HTML usiamo la URI o scegliamo di mettere la pagina?
+                                              ctp:landingPage <http://data.europeana.eu/item/15502/GG_4510> ;
+### @tiziana: Potrebbe esserci un riferimento a IIIF? Altrimenti forse non metterei questa propietà?
+                                              ctp:linkToDigitalization <https://www.europeana.eu/item/15502/GG_4510> .
 
 
 ###  https://www.europeana.eu/it/item/2064105/Museu_ProvidedCHO_Skoklosters_slott_32631?lang=
