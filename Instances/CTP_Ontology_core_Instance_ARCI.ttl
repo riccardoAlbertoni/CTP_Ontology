@@ -392,7 +392,7 @@ ctp:Type rdf:type owl:Class .
                                               ctp:isPartOf :Arcimboldo_tp ;
 ### @tiziana: No lingua, visto che La uri dereferenzia anche per HTML usiamo la URI o scegliamo di mettere la pagina?
                                               ctp:landingPage <http://data.europeana.eu/item/15502/GG_4510> ;
-### @tiziana: Potrebbe esserci un riferimento a IIIF? Altrimenti forse non metterei questa propietà?
+### @tiziana: Potrebbe esserci un riferimento a IIIF? Altrimenti forse non metterei questa propietà? https://iiif.europeana.eu/presentation/15502/GG_4510/manifest 
                                               ctp:linkToDigitalization <https://www.europeana.eu/item/15502/GG_4510> .
 
 
