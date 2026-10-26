@@ -2,3 +2,7 @@
  Chi ha generato la descrizione in CTP Del thematic path?
  Dove una certa CO é citata nel TP?
  Qual è il testo associato nel TP per quella specifica CO?
+ Qual è la licenza con la quale é pubblicata il percorso originale (es. Europeana Stories)?
+ Qual è la licenza é applicata alla risorsa XY nel percorso?
+ Quali risorse hanno una corrispettiva storia in Europeana?
+ 
